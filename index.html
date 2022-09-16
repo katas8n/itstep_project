@@ -4,27 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>It-step Project</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <form class="form">
-        <div class="input-card">
-          <label class="label-card" for="">Card number</label>
-          <input type="text" class="input" />
-        </div>
+      <div class="form-wrapper">
+        <form class="form">
+          <div class="input-card">
+            <label class="label-card" for="">Card number</label>
+            <input
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+              type="text"
+              class="input"
+            />
+          </div>
 
-        <div class="input-card">
-          <label class="label-card" for="">Name and Surname</label>
-          <input type="text" class="input" />
-        </div>
+          <div class="card-info">
+            <div class="input-card">
+              <label class="label-card" for="">Name</label>
+              <input placeholder="Name" type="text" class="input" />
+            </div>
 
-        <div class="input-card">
-          <label class="label-card" for="">CVV</label>
-          <input type="password" class="input" />
-        </div>
+            <div class="input-card">
+              <label class="label-card" for="">CVV</label>
+              <input placeholder="CVV" type="password" class="input" />
+            </div>
+          </div>
 
-        <button class="card-btn">Send</button>
-      </form>
+          <div class="btn-wrapper">
+            <button class="card-btn">Send</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
